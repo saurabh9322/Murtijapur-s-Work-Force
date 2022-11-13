@@ -24,7 +24,7 @@
 
         <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
-            android:layout_height="115sp"
+            android:layout_height="100sp"
             android:id="@+id/cd_hp_st"
             android:backgroundTint="@color/gradient1"
             tools:ignore="MissingConstraints">
