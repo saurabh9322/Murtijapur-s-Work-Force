@@ -9,7 +9,7 @@
     android:background="#D4D9E8">
 <androidx.cardview.widget.CardView
     android:layout_width="match_parent"
-    android:layout_height="200dp"
+    android:layout_height="100dp"
     android:id="@+id/cd_hp_st"
     android:backgroundTint="@color/gradient2">
     <LinearLayout
