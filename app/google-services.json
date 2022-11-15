@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "907944797120",
+    "project_id": "murtijapurworkforce",
+    "storage_bucket": "murtijapurworkforce.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:907944797120:android:a9c40f6df16dd42d175e25",
+        "android_client_info": {
+          "package_name": "com.example.workers"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "907944797120-2vl9egcbmll6ubbemnl80aul761jeb53.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCOps9pEflY84ql9O7Dpn4RrD_isAbUXXI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "907944797120-2vl9egcbmll6ubbemnl80aul761jeb53.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

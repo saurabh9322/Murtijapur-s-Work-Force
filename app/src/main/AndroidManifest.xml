@@ -14,8 +14,57 @@
         android:theme="@style/Theme.Workers"
         tools:targetApi="31">
         <activity
+            android:name=".Help"
+            android:exported="false"
+            android:parentActivityName=".HomeNavigation">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".PrivacyPolicy"
+            android:exported="false"
+            android:parentActivityName=".HomeNavigation">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".RateThisApp"
+            android:exported="false"
+            android:parentActivityName=".HomeNavigation">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".Share"
+            android:exported="false"
+            android:parentActivityName=".HomeNavigation">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".ContactUs"
+            android:exported="false"
+            android:parentActivityName=".HomeNavigation">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".AboutUs"
+            android:exported="false"
+            android:parentActivityName=".HomeNavigation">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
             android:name=".Reg_page"
-            android:exported="false">
+            android:exported="false"
+            android:parentActivityName=".HomeNavigation">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />

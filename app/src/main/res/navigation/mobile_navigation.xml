@@ -11,15 +11,36 @@
         android:label="@string/menu_home"
         tools:layout="@layout/fragment_home" />
 
-    <fragment
-        android:id="@+id/nav_gallery"
-        android:name="com.example.workers.ui.gallery.GalleryFragment"
-        android:label="@string/menu_gallery"
-        tools:layout="@layout/fragment_gallery" />
+    <activity
+        android:id="@+id/nav_about_us"
+        android:name="com.example.workers.AboutUs"
+        android:label="@string/menu_about_us"
+        tools:layout="@layout/activity_about_us" />
 
-    <fragment
-        android:id="@+id/nav_slideshow"
-        android:name="com.example.workers.ui.slideshow.SlideshowFragment"
-        android:label="@string/menu_slideshow"
-        tools:layout="@layout/fragment_slideshow" />
+    <activity
+        android:id="@+id/nav_contact"
+        android:name="com.example.workers.ContactUs"
+        android:label="@string/menu_contact_us"
+        tools:layout="@layout/activity_contact_us" />
+    <activity
+        android:id="@+id/nav_share"
+        android:name="com.example.workers.Share"
+        android:label="@string/menu_share"
+        tools:layout="@layout/activity_share" />
+    <activity
+        android:id="@+id/nav_rate_this_app"
+        android:name="com.example.workers.RateThisApp"
+        android:label="@string/menu_rate"
+        tools:layout="@layout/activity_rate_this_app" />
+    <activity
+        android:id="@+id/nav_privacy_policy"
+        android:name="com.example.workers.PrivacyPolicy"
+        android:label="@string/menu_privacy_policy"
+        tools:layout="@layout/activity_privacy_policy" />
+
+    <activity
+        android:id="@+id/nav_help"
+        android:name="com.example.workers.Help"
+        android:label="@string/menu_help"
+        tools:layout="@layout/activity_help" />
 </navigation>

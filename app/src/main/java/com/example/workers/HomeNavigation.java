@@ -36,15 +36,12 @@ public class HomeNavigation extends AppCompatActivity {
 
         setSupportActionBar(binding.appBarHomeNavigation.toolbar);
 
-
-
-
         DrawerLayout drawer = binding.drawerLayout;
         NavigationView navigationView = binding.navView;
         // Passing each menu ID as a set of Ids because each
         // menu should be considered as top level destinations.
         mAppBarConfiguration = new AppBarConfiguration.Builder(
-                R.id.nav_home, R.id.nav_gallery, R.id.nav_slideshow)
+                R.id.nav_home, R.id.nav_about_us, R.id.nav_contact,R.id.nav_share,R.id.nav_rate_this_app,R.id.nav_privacy_policy,R.id.nav_help)
                 .setOpenableLayout(drawer)
                 .build();
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment_content_home_navigation);
