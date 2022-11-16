@@ -63,21 +63,11 @@
         </activity>
         <activity
             android:name=".Reg_page"
-            android:exported="false"
+            android:exported="true"
             android:parentActivityName=".HomeNavigation">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
-        </activity>
-        <activity
-            android:name=".HomeNavigation"
-            android:exported="true"
-            android:label="@string/title_activity_home_navigation"
-            android:theme="@style/Theme.Workers.NoActionBar">
-            <meta-data
-                android:name="android.app.lib_name"
-                android:value="" />
-
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -85,8 +75,23 @@
             </intent-filter>
         </activity>
         <activity
+            android:name=".HomeNavigation"
+            android:exported="false"
+            android:label="@string/title_activity_home_navigation"
+            android:theme="@style/Theme.Workers.NoActionBar">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+
+
+        </activity>
+        <activity
             android:name=".MainActivity"
             android:exported="false" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
     </application>
 
 </manifest>

@@ -22,7 +22,7 @@ public class MainActivity extends AppCompatActivity {
  CardView cd_hp_first,cd_hp_second;
  LinearLayout layout;
     float v=0;
-    @SuppressLint("ResourceType")
+    @SuppressLint({"ResourceType", "MissingInflatedId"})
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
