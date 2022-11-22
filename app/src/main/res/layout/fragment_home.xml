@@ -100,6 +100,20 @@
         android:layout_height="match_parent"
         android:orientation="vertical">
 
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            app:cornerRadius="15sp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_margin="30sp"
+            android:textSize="20sp"
+            android:text="Click"
+            android:drawableRight="@drawable/next_icon"/>
+
 
 
     </LinearLayout>

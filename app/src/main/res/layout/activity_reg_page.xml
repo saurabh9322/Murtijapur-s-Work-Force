@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -12,15 +12,16 @@
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
+
     <androidx.cardview.widget.CardView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/reg_page_cd_1"
-        android:visibility="visible">
+        android:visibility="gone">
 
         <LinearLayout
             android:layout_width="wrap_content"
-            android:layout_height="800sp"
+            android:layout_height="wrap_content"
             android:background="@drawable/reg_background"
             android:orientation="vertical">
 
@@ -235,7 +236,7 @@
                 android:layout_marginRight="30dp"
                 android:background="@drawable/pro_shape"
                 tools:ignore="RtlCompat"
-                android:drawableRight="@drawable/ic_baseline_cancel_24"
+                android:drawableRight="@drawable/next_icon"
                 android:paddingRight="20dp"/>
 
         </LinearLayout>
@@ -245,10 +246,11 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:id="@+id/reg_page_cd_3"
-        android:visibility="gone">
+        android:layout_gravity="center"
+        android:visibility="visible">
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="800sp"
+            android:layout_height="match_parent"
             android:background="@drawable/reg_background"
             android:orientation="vertical">
 
@@ -280,10 +282,9 @@
                 android:layout_marginLeft="20sp"/>
 
             <ImageView
-                android:layout_width="250dp"
-                android:layout_height="222dp"
-                android:layout_gravity="center"
-                android:layout_marginTop="16sp"
+                android:layout_width="match_parent"
+                android:layout_height="250sp"
+                android:layout_margin="8sp"
                 android:src="@drawable/reg_page_cd3_img" />
 
 
@@ -317,7 +318,6 @@
                 android:layout_marginEnd="30dp"
                 android:hint="Experience"
                 android:textColorHint="@color/black"
-
                 tools:ignore="MissingClass">
 
                 <com.google.android.material.textfield.TextInputEditText
@@ -325,7 +325,6 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:ems="10"
-
                     android:inputType="textPersonName"
                     android:textSize="16sp" />
 
@@ -333,26 +332,25 @@
 
 
             <TextView
-                android:layout_width="140dp"
-                android:layout_height="40dp"
+                android:layout_width="wrap_content"
+                android:layout_height="40sp"
                 android:textColor="@color/white"
                 android:id="@+id/tv_reg_page_cd3_nextbtn"
                 android:text="Next"
-                android:textSize="20dp"
+                android:textSize="20sp"
                 android:fontFamily="sans-serif-black"
                 android:paddingTop="05dp"
                 android:layout_gravity="right"
                 android:layout_marginTop="40dp"
                 android:textAlignment="center"
-                android:layout_marginRight="30dp"
+                android:layout_marginEnd="30dp"
                 android:background="@drawable/pro_shape"
-                tools:ignore="RtlCompat"
-                android:drawableRight="@drawable/ic_baseline_cancel_24"
-                android:paddingRight="20dp"/>
+                tools:ignore="RtlCompat,RtlSymmetry"
+                app:drawableRightCompat="@drawable/next_icon" />
         </LinearLayout>
 
     </androidx.cardview.widget.CardView>
 
     </LinearLayout>
 
-</ScrollView>
+</LinearLayout>
