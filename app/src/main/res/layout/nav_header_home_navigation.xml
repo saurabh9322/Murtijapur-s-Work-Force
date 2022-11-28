@@ -29,7 +29,7 @@
             app:civ_border_overlay="true"
             app:civ_border_color="@color/purple_700"
             android:contentDescription="@string/nav_header_desc"
-            android:src="@drawable/img" />
+            android:src="@drawable/profilephoto" />
 
         <TextView
             android:id="@+id/uName"

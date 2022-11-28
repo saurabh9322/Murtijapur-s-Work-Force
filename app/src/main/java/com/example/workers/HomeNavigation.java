@@ -1,9 +1,15 @@
 package com.example.workers;
 
 import android.annotation.SuppressLint;
+import android.app.Activity;
+import android.app.AlertDialog;
 import android.app.StatusBarManager;
+import android.content.DialogInterface;
+import android.content.SharedPreferences;
+import android.content.res.Configuration;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.Menu;
 import android.widget.Toolbar;
@@ -11,6 +17,7 @@ import android.widget.Toolbar;
 import com.google.android.material.snackbar.Snackbar;
 import com.google.android.material.navigation.NavigationView;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatDelegate;
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
@@ -20,6 +27,8 @@ import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.workers.databinding.ActivityHomeNavigationBinding;
+
+import java.util.Locale;
 
 public class HomeNavigation extends AppCompatActivity {
 
@@ -47,6 +56,8 @@ public class HomeNavigation extends AppCompatActivity {
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment_content_home_navigation);
         NavigationUI.setupActionBarWithNavController(this, navController, mAppBarConfiguration);
         NavigationUI.setupWithNavController(navigationView, navController);
+
+        loadLocale();
     }
 
     @Override
@@ -55,6 +66,67 @@ public class HomeNavigation extends AppCompatActivity {
         getMenuInflater().inflate(R.menu.home_navigation, menu);
         return true;
     }
+
+
+    @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+
+        switch (item.getItemId()){
+            case R.id.action_settings:
+                showDongale();
+        }
+
+
+        return super.onOptionsItemSelected(item);
+    }
+
+    private void showDongale() {
+        final String [] language = {"English","Marathi","Hindi"};
+        AlertDialog.Builder builder = new AlertDialog.Builder(HomeNavigation.this);
+        builder.setTitle("Choose Language")
+                .setSingleChoiceItems(language, -1, new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialogInterface, int i) {
+                       //english
+                        if (i==0){
+                            setLocale("en");
+                            recreate();
+                        }
+                        else if (i==1){
+                            setLocale("mr");
+                            recreate();
+                        }
+                        else if (i==2){
+                            setLocale("hi");
+                            recreate();
+                        }
+                    }
+                });
+        AlertDialog mDialog = builder.create();
+        mDialog.show();
+    }
+
+    private void setLocale(String lang) {
+        Locale locale = new Locale(lang);
+        Locale.setDefault(locale);
+        Configuration configuration = new Configuration();
+        configuration.locale = locale;
+        getBaseContext().getResources().updateConfiguration(configuration,getBaseContext().getResources().getDisplayMetrics());
+
+
+        SharedPreferences.Editor editor = getSharedPreferences("Settings",MODE_PRIVATE).edit();
+        editor.putString("My_Lang",lang);
+        editor.apply();
+
+    }
+
+    private void loadLocale() {
+        SharedPreferences preferences = getSharedPreferences("Settings", Activity.MODE_PRIVATE);
+        String lang = preferences.getString("My_Lang","");
+        setLocale(lang);
+
+    }
+
 
     @Override
     public boolean onSupportNavigateUp() {

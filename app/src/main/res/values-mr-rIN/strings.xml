@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name" translatable="false">Murtijapur Work Force</string>
     <string name="title_activity_home_navigation" translatable="false">HomeNavigation</string>
@@ -9,20 +10,20 @@
     <string name="action_settings" translatable="false">Settings</string>
 
 
-    <string name="searchView" translatable="false">Search by...</string>
+    <string name="searchView" translatable="false">द्वारे शोधा...</string>
 
 
 
-    <string name="menu_communicate" translatable="false">Communicate</string>
-    <string name="menu_home" translatable="false">Home</string>
-    <string name="menu_about_us" translatable="false">About Us</string>
-    <string name="menu_contact_us" translatable="false">Contact Us</string>
-    <string name="menu_share" translatable="false">Share</string>
-    <string name="menu_rate" translatable="false">Rate this app</string>
-    <string name="menu_privacy_policy" translatable="false">Privacy-policy</string>
-    <string name="menu_help" translatable="false">Help</string>
-    <string name="home_title_main">Increase your reliability life \nand make\'s life easy</string>
-    <string name="language">Language</string>
+    <string name="menu_communicate" translatable="false">संवाद साधा</string>
+    <string name="menu_home" translatable="false">मुख्यपृष्ठ</string>
+    <string name="menu_about_us" translatable="false">आमच्या बद्दल</string>
+    <string name="menu_contact_us" translatable="false">आमच्याशी संपर्क साधा</string>
+    <string name="menu_share" translatable="false">शेअर करा</string>
+    <string name="menu_rate" translatable="false">अॅपला रेट करा</string>
+    <string name="menu_privacy_policy" translatable="false">गोपनीयता-धोरण</string>
+    <string name="menu_help" translatable="false">मदत</string>
+    <string name="home_title_main">तुमची विश्वासार्हता वाढवा \nआणि तुमचे जीवन सोपे करा</string>
+    <string name="language">भाषा</string>
 
 
     <style name="SearchViewStyle" parent="Widget.AppCompat.SearchView">

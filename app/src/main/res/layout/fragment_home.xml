@@ -44,7 +44,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:id="@+id/tv_reg"
-                    android:text="Increase your reliability life \nand make's life easy"
+                    android:text="@string/home_title_main"
                     android:layout_gravity="center"
                     android:gravity="center"
                     android:textSize="18dp"
