@@ -40,6 +40,9 @@ public class HomeNavigation extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
+
+        loadLocale();
+
         binding = ActivityHomeNavigationBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
@@ -57,7 +60,6 @@ public class HomeNavigation extends AppCompatActivity {
         NavigationUI.setupActionBarWithNavController(this, navController, mAppBarConfiguration);
         NavigationUI.setupWithNavController(navigationView, navController);
 
-        loadLocale();
     }
 
     @Override
@@ -71,9 +73,9 @@ public class HomeNavigation extends AppCompatActivity {
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
 
-        switch (item.getItemId()){
-            case R.id.action_settings:
-                showDongale();
+        if (item.getItemId() == R.id.action_settings) {
+            showDongale();
+            return true;
         }
 
 
